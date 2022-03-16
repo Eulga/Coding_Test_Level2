@@ -1,3 +1,20 @@
+// 스택 생각을 어떻게 이제서야 하지? 뇌가 퇴화했나 진짜
+import java.util.*;
+
+class Solution
+{
+    public int solution(String s)
+    {
+        Stack<Character> stack = new Stack<>();
+         
+        for(char c : s.toCharArray()) 
+          if(!stack.isEmpty() && stack.peek() == c) stack.pop();
+          else stack.push(c);
+         
+        return stack.isEmpty() ? 1 : 0;
+    }
+}
+
 // 효율성 실패
 class Solution
 {
