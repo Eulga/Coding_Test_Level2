@@ -1,6 +1,3 @@
-
-
-
 // 효율성 실패
 class Solution
 {
